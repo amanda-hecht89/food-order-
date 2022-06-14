@@ -38,13 +38,16 @@ h1 {
 }
 
 .special {
-  background-color: rgb(25, 70, 109);
+  background-color: rgba(118, 149, 177, 0.322);
+  width: 75%;
 }
 
 .name {
-  background-color: coral;
+  background-color: rgb(118, 149, 177, 0.322);
+  width: 50%;
 }
 
 .order {
-  background-color: crimson;
+  background-color: rgb(118, 149, 177, 0.322);
+  width: 50%;
 }
