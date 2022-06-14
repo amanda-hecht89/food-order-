@@ -36,3 +36,15 @@ h1 {
   50%  {top: 0px; left: 20%}
   100% {top: -20px; left: 0%}
 }
+
+.special {
+  background-color: rgb(25, 70, 109);
+}
+
+.name {
+  background-color: coral;
+}
+
+.order {
+  background-color: crimson;
+}

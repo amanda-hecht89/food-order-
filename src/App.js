@@ -15,34 +15,34 @@ function App() {
 
   return (
     <div className="App">
-      <section className='dropdown'>
-        <header>
-          <h1>
-            <img className='patty' src={'./images/krustykrab.png'} height='75' />
+      <header>
+        <h1>
+          <img className='patty' src={'./images/krustykrab.png'} height='75' />
             WELCOME TO THE KRUSTY KRAB!
-            <img className='patty' src={'./images/krustykrab.png'} height='75' />
-          </h1>
-        </header>
-        <hr />
+          <img className='patty' src={'./images/krustykrab.png'} height='75' />
+        </h1>
+      </header>
+      <hr />
+      <section className='dropdown'>
         <FoodDropDown setFoodId={setFoodId} />
         <DrinkDropDown setDrinkId={setDrinkId} />
         <SideDropDown setSideId={setSideId} />
       </section>
       <Meal food={foodId} side={sideId} drink={drinkId} />
       <hr />
-      <div>
+      <div className='special'>
         <img src={'./images/squidward.png'} height='150' />
         What do you want to eat.......
         <img src={'./images/krabs-2.png'} height='150' />
         YAY MONEY!
       </div>
       <hr />
-      <div>
+      <div className='name'>
         <img src={'./images/plankton.png'} height='150' />
         Tell me your name!!!!
       </div>
       <hr />
-      <div>
+      <div className='order'>
         <img src={'./images/orderup2.png'} height='150' />
         ORDER UP!!!!!!
       </div>
