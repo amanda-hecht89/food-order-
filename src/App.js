@@ -19,9 +19,9 @@ function App() {
     <div className="App" style={{ backgroundImage: `url(${backgroundImg})` }}>
       <header>
         <h1>
-          <img className='patty' src={'./images/krustykrab.png'} height='75' />
+          <img className='patty' src={'./images/krustykrab.png'} height='110' />
             WELCOME TO THE KRUSTY KRAB!
-          <img className='patty' src={'./images/krustykrab.png'} height='75' />
+          <img className='patty' src={'./images/krustykrab.png'} height='110' />
         </h1>
       </header>
       <hr />
@@ -33,19 +33,19 @@ function App() {
       <Meal food={foodId} side={sideId} drink={drinkId} />
       <hr />
       <div className='special'>
-        <img src={'./images/squidward.png'} height='150' />
+        <img src={'./images/squidward.png'} height='110' />
         What do you want to eat.......
-        <img src={'./images/krabs-2.png'} height='150' />
+        <img src={'./images/krabs-2.png'} height='110' />
         YAY MONEY!
       </div>
       <hr />
       <div className='name'>
-        <img src={'./images/plankton.png'} height='150' />
+        <img src={'./images/plankton.png'} height='100' />
         Tell me your name!!!!
       </div>
       <hr />
       <div className='order'>
-        <img src={'./images/orderup2.png'} height='150' />
+        <img src={'./images/orderup2.png'} height='100' />
         ORDER UP SQUIDWARD!!!!!!
       </div>
       

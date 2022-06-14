@@ -40,14 +40,28 @@ h1 {
 .special {
   background-color: rgba(118, 149, 177, 0.322);
   width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .name {
   background-color: rgb(118, 149, 177, 0.322);
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .order {
   background-color: rgb(118, 149, 177, 0.322);
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
 }
