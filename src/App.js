@@ -4,7 +4,7 @@ import DrinkDropDown from './DrinkDropDown/DrinkDrop';
 import FoodDropDown from './FoodDropDown/FoodDrop';
 import SideDropDown from './SideDropDown/SideDrop';
 import Meal from './Food';
-import backgroundImg from './background.jpg';
+import backgroundImg from './background2.jpg';
 
 
 
