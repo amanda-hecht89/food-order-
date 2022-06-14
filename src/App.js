@@ -5,6 +5,7 @@ import FoodDropDown from './FoodDropDown/FoodDrop';
 import SideDropDown from './SideDropDown/SideDrop';
 import Meal from './Food';
 import backgroundImg from './background2.jpg';
+import OrderNameInput from './OrderNameInput';
 
 
 
@@ -13,7 +14,7 @@ function App() {
   const [foodId, setFoodId] = useState('food-1');
   const [drinkId, setDrinkId] = useState('drink-1');
   const [sideId, setSideId] = useState('side-1');
-  
+  const [orderName, setOrderName] = useState('');
 
   return (
     <div className="App" style={{ backgroundImage: `url(${backgroundImg})` }}>
@@ -41,12 +42,12 @@ function App() {
       <hr />
       <div className='name'>
         <img src={'./images/plankton.png'} height='100' />
-        Tell me your name!!!!
+        <OrderNameInput setOrderName={setOrderName} />
       </div>
       <hr />
       <div className='order'>
         <img src={'./images/orderup2.png'} height='100' />
-        ORDER UP SQUIDWARD!!!!!!
+        ORDER UP {orderName}!!!!!!
       </div>
       
     </div>
