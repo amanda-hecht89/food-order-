@@ -16,20 +16,34 @@ function App() {
   return (
     <div className="App">
       <section className='dropdown'>
+        <header>
+          <h1>
+            WELCOME TO THE KRUSTY KRAB!
+          </h1>
+        </header>
+        <hr />
         <FoodDropDown setFoodId={setFoodId} />
         <DrinkDropDown setDrinkId={setDrinkId} />
         <SideDropDown setSideId={setSideId} />
       </section>
       <Meal food={foodId} side={sideId} drink={drinkId} />
       <hr />
-      <img src={'./images/squidward.png'} height='150' />
-      what do you want to eat?
+      <div>
+        <img src={'./images/squidward.png'} height='150' />
+        What do you want to eat.......
+        <img src={'./images/krabs-2.png'} height='150' />
+        YAY MONEY!
+      </div>
       <hr />
-      <img src={'./images/plankton.png'} height='150' />
-      Tell me your name!!!!
+      <div>
+        <img src={'./images/plankton.png'} height='150' />
+        Tell me your name!!!!
+      </div>
       <hr />
-      <img src={'./images/orderup.png'} height='150' />
-      ORDER UP!!!!!!
+      <div>
+        <img src={'./images/orderup.png'} height='150' />
+        ORDER UP!!!!!!
+      </div>
       
     </div>
   );
