@@ -6,6 +6,8 @@ import SideDropDown from './SideDropDown/SideDrop';
 import Meal from './Food';
 import backgroundImg from './background2.jpg';
 import OrderNameInput from './OrderNameInput';
+import InstructionsForm from './Instructions/InstructionsForm';
+import InstructionsList from './Instructions/InstructionsList';
 
 
 
@@ -15,6 +17,7 @@ function App() {
   const [drinkId, setDrinkId] = useState('drink-1');
   const [sideId, setSideId] = useState('side-1');
   const [orderName, setOrderName] = useState('');
+  const [instructions, setInstructions] = useState([]);
 
   return (
     <div className="App" style={{ backgroundImage: `url(${backgroundImg})` }}>
@@ -36,8 +39,10 @@ function App() {
       <div className='special'>
         <img src={'./images/squidward.png'} height='110' />
         What do you want to eat.......
+        <InstructionsForm setInstructions={setInstructions} instructions={instructions}/>
         <img src={'./images/krabs-2.png'} height='110' />
         YAY MONEY!
+        <InstructionsList instructions={instructions}/>
       </div>
       <hr />
       <div className='name'>
