@@ -3,7 +3,8 @@ import { useState } from 'react';
 import DrinkDropDown from './DrinkDropDown/DrinkDrop';
 import FoodDropDown from './FoodDropDown/FoodDrop';
 import SideDropDown from './SideDropDown/SideDrop';
-import Meal from './food';
+import Meal from './Food';
+import backgroundImg from 'background.jpg';
 
 
 function App() {
@@ -13,14 +14,13 @@ function App() {
   const [sideId, setSideId] = useState('side-1');
 
   return (
-    <div className="App">
-      <Meal food={foodId} side={sideId} drink={drinkId} />
-
+    <div className="App" style={{ backgroundImage: `url(${backgroundImg})` }}>
       <section className='dropdown'>
         <FoodDropDown setFoodId={setFoodId} />
         <DrinkDropDown setDrinkId={setDrinkId} />
         <SideDropDown setSideId={setSideId} />
       </section>
+      <Meal food={foodId} side={sideId} drink={drinkId} />
       
     </div>
   );

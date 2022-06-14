@@ -3,9 +3,9 @@ import React from 'react';
 export default function Meal({ food, drink, side }) {
   return (
     <div className='meal'>
-      <img src={`${food}.jpg`} />
-      <img src={`${drink}.jpg`} />
-      <img src={`${side}.jpg`} />
+      <img src={`images/${food}.png`} style={{ height:'150' }}/>
+      <img src={`images/${drink}.png`} style={{ height:'150' }}/>
+      <img src={`images/${side}.png`} style={{ height:'150' }} />
     </div>
   );
 }
