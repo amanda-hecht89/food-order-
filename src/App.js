@@ -1,8 +1,8 @@
 import './App.css';
 import { useState } from 'react';
-import drinkDropDown from './drinkDropDown/drinkDrop';
-import FoodDropDown from './foodDropDown/foodDrop';
-import sideDropDown from './sideDropDown/sideDrop';
+import DrinkDropDown from './DrinkDropDown/DrinkDrop';
+import FoodDropDown from './FoodDropDown/FoodDrop';
+import SideDropDown from './SideDropDown/SideDrop';
 import Meal from './food';
 
 
@@ -18,8 +18,8 @@ function App() {
 
       <section className='dropdown'>
         <FoodDropDown setFoodId={setFoodId} />
-        <FoodDropDown setDrinkId={setDrinkId} />
-        <FoodDropDown setSideId={setSideId} />
+        <DrinkDropDown setDrinkId={setDrinkId} />
+        <SideDropDown setSideId={setSideId} />
       </section>
       
     </div>
