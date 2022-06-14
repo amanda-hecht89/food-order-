@@ -8,6 +8,9 @@ h1 {
   animation-name: slide;
   animation-duration: 15s;
   animation-iteration-count: infinite;
+  background: -webkit-linear-gradient(blue, pink);
+  background-clip: content-box;
+
 
 }
 
@@ -64,4 +67,48 @@ h1 {
 .dropdown {
   display: flex;
   flex-direction: row;
+  color: rgba(109, 14, 87, 0.705);
+  font-family: 'Skranji', cursive;
+}
+
+p {
+  font-family: 'Skranji', cursive;
+  font-size: 35px;
+  color: rgba(109, 14, 87, 0.705);
+}
+
+.button {
+  font-size: 20px;
+  color: rgba(109, 14, 87, 0.705);
+  font-family: 'Skranji', cursive;
+}
+
+.select {
+  font-size: 20px;
+  color: rgba(109, 14, 87, 0.705);
+}
+
+.instruct {
+  font-size: 25px;
+  color: rgba(109, 14, 87, 0.705);
+}
+
+.plankton {
+  font-size: 25px;
+  color: rgba(109, 14, 87, 0.705);
+  font-family: 'Skranji', cursive;
+}
+
+.plankton input {
+  height: 25px;
+}
+
+.list {
+  font-size: 25px;
+  color: rgba(109, 14, 87, 0.705);
+  font-family: 'Skranji', cursive;
+}
+
+.order input {
+  height: 25px;
 }

@@ -38,10 +38,15 @@ function App() {
       <hr />
       <div className='special'>
         <img src={'./images/squidward.png'} height='110' />
+        <p>
         What do you want to eat.......
+        </p>
+        < hr />
         <InstructionsForm setInstructions={setInstructions} instructions={instructions}/>
-        <img src={'./images/krabs-2.png'} height='110' />
+        <hr /><img src={'./images/krabs-2.png'} height='110' />
+        <p>
         YAY MONEY!
+        </p><hr />
         <InstructionsList instructions={instructions}/>
       </div>
       <hr />
@@ -52,7 +57,9 @@ function App() {
       <hr />
       <div className='order'>
         <img src={'./images/orderup2.png'} height='100' />
-        ORDER UP {orderName}!!!!!!
+        <p>
+          ORDER UP {orderName}!!!!!!
+        </p>
       </div>
       
     </div>

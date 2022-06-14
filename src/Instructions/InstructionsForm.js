@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../App.css';
 
 export default function InstructionsForm({ setInstructions, instructions }) {
   const [instructionsForm, setInstructionsForm] = useState('');
@@ -9,10 +10,10 @@ export default function InstructionsForm({ setInstructions, instructions }) {
   }
 
   return (
-    <section>
-      <form onSubmit={handleSubmit}>
-        <input value={instructionsForm} onChange={e => setInstructionsForm(e.target.value)} />
-        <button>Order Now!</button>
+    <section className='order'>
+      <form onSubmit={handleSubmit}><hr />
+        <input value={instructionsForm} onChange={e => setInstructionsForm(e.target.value)} /><hr />
+        <button className='button'>Order Now!</button>
       </form>
     </section>
   );

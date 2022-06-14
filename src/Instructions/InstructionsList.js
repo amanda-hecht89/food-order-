@@ -3,10 +3,10 @@ import Instructions from './Instructions';
 
 export default function InstructionsList({ instructions }) {
   return (
-    <section>
+    <section className='list'>
       <ul>
         {
-          instructions.map((instructions, i) => <Instructions key={instruction + i} instruction={instruction} />)
+          instructions.map((instruction, i) => <Instructions key={instruction + i} instruction={instruction} />)
         }  
       </ul>
     </section>
