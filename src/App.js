@@ -4,7 +4,7 @@ import DrinkDropDown from './DrinkDropDown/DrinkDrop';
 import FoodDropDown from './FoodDropDown/FoodDrop';
 import SideDropDown from './SideDropDown/SideDrop';
 import Meal from './Food';
-import backgroundImg from 'background.jpg';
+
 
 
 function App() {
@@ -14,13 +14,22 @@ function App() {
   const [sideId, setSideId] = useState('side-1');
 
   return (
-    <div className="App" style={{ backgroundImage: `url(${backgroundImg})` }}>
+    <div className="App">
       <section className='dropdown'>
         <FoodDropDown setFoodId={setFoodId} />
         <DrinkDropDown setDrinkId={setDrinkId} />
         <SideDropDown setSideId={setSideId} />
       </section>
       <Meal food={foodId} side={sideId} drink={drinkId} />
+      <hr />
+      <img src={'./images/squidward.png'} height='150' />
+      what do you want to eat?
+      <hr />
+      <img src={'./images/plankton.png'} height='150' />
+      Tell me your name!!!!
+      <hr />
+      <img src={'./images/orderup.png'} height='150' />
+      ORDER UP!!!!!!
       
     </div>
   );
