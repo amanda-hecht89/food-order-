@@ -1,8 +1,9 @@
 import React from 'react';
+import './FoodDrop.css';
 
 export default function FoodDropDown({ setFoodId }) {
   return (
-    <div>
+    <div className='drop'>
       <select onChange={e => setFoodId(e.target.value)}>
         <option value="food-1">Krabby Patty</option>
         <option value="food-2">Krusty Krab Pizza</option>

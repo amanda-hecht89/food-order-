@@ -18,9 +18,9 @@ function App() {
       <section className='dropdown'>
         <header>
           <h1>
-            <img src={'./images/krustykrab.png'} height='75' />
+            <img className='patty' src={'./images/krustykrab.png'} height='75' />
             WELCOME TO THE KRUSTY KRAB!
-            <img src={'./images/krustykrab.png'} height='75' />
+            <img className='patty' src={'./images/krustykrab.png'} height='75' />
           </h1>
         </header>
         <hr />
