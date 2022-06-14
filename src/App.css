@@ -10,12 +10,17 @@ h1 {
   animation-iteration-count: infinite;
   background: -webkit-linear-gradient(blue, pink);
   background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 
 
 }
 
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .App-logo {
@@ -60,6 +65,7 @@ h1 {
   background-color: rgb(118, 149, 177, 0.322);
   width: 50%;
   display: flex;
+  align-self: center;
   justify-content: center;
   align-items: center;
 }
@@ -67,6 +73,9 @@ h1 {
 .dropdown {
   display: flex;
   flex-direction: row;
+  align-content: center;
+  
+  padding: 25px;
   color: rgba(109, 14, 87, 0.705);
   font-family: 'Skranji', cursive;
 }
@@ -111,4 +120,10 @@ p {
 
 .order input {
   height: 25px;
+}
+
+.everythingelse {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

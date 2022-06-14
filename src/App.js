@@ -34,32 +34,35 @@ function App() {
         <DrinkDropDown setDrinkId={setDrinkId} />
         <SideDropDown setSideId={setSideId} />
       </section>
-      <Meal food={foodId} side={sideId} drink={drinkId} />
-      <hr />
-      <div className='special'>
-        <img src={'./images/squidward.png'} height='110' />
-        <p>
+      <div className='everythingelse'>
+
+        <Meal food={foodId} side={sideId} drink={drinkId} />
+        <hr />
+        <div className='special'>
+          <img src={'./images/squidward.png'} height='110' />
+          <p>
         What do you want to eat.......
-        </p>
-        < hr />
-        <InstructionsForm setInstructions={setInstructions} instructions={instructions}/>
-        <hr /><img src={'./images/krabs-2.png'} height='110' />
-        <p>
+          </p>
+          < hr />
+          <InstructionsForm setInstructions={setInstructions} instructions={instructions}/>
+          <hr /><img src={'./images/krabs-2.png'} height='110' />
+          <p>
         YAY MONEY!
-        </p><hr />
-        <InstructionsList instructions={instructions}/>
-      </div>
-      <hr />
-      <div className='name'>
-        <img src={'./images/plankton.png'} height='100' />
-        <OrderNameInput setOrderName={setOrderName} />
-      </div>
-      <hr />
-      <div className='order'>
-        <img src={'./images/orderup2.png'} height='100' />
-        <p>
+          </p><hr />
+          <InstructionsList instructions={instructions}/>
+        </div>
+        <hr />
+        <div className='name'>
+          <img src={'./images/plankton.png'} height='100' />
+          <OrderNameInput setOrderName={setOrderName} />
+        </div>
+        <hr />
+        <div className='order'>
+          <img src={'./images/orderup2.png'} height='100' />
+          <p>
           ORDER UP {orderName}!!!!!!
-        </p>
+          </p>
+        </div>
       </div>
       
     </div>
