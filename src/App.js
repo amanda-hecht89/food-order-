@@ -18,7 +18,9 @@ function App() {
       <section className='dropdown'>
         <header>
           <h1>
+            <img src={'./images/krustykrab.png'} height='75' />
             WELCOME TO THE KRUSTY KRAB!
+            <img src={'./images/krustykrab.png'} height='75' />
           </h1>
         </header>
         <hr />
@@ -41,7 +43,7 @@ function App() {
       </div>
       <hr />
       <div>
-        <img src={'./images/orderup.png'} height='150' />
+        <img src={'./images/orderup2.png'} height='150' />
         ORDER UP!!!!!!
       </div>
       
