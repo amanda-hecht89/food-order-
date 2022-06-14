@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function Instructions({ instructions, key }) {
+export default function Instructions({ instruction, key }) {
   return (
-    <li key={key} className='imstruct'>
+    <li key={key} className='instruct'>
       {
-        instructions
+        instruction
       }
     </li>
   );
