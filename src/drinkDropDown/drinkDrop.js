@@ -1,5 +1,4 @@
 import React from 'react';
-import './DrinkDrop.css';
 import '../App.css';
 
 
